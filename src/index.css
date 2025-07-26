@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply font-poppins text-neutral-900;
+}
+
+@layer base {
+  /* table {}
+
+  th,
+  td {
+    @apply py-3 px-2.5 text-left border-y border-stroke-gray;
+  }
+
+  thead {
+    @apply bg-neutral-100;
+  }
+
+  th {
+    @apply font-semibold;
+  }
+
+  a {
+    @apply hover:no-underline;
+  } */
+}
+
+@layer components {
+  .max-container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
+  .sidebar {
+    @apply flex flex-col p-3 md:max-w-60 bg-neutral-1 border border-stroke-gray text-neutral-900 z-10 h-full;
+  }
+
+  .sidebar-links{
+    @apply flex flex-row items-center gap-2 font-normal text-slate-gray px-3 py-2 hover:bg-primary hover:bg-opacity-90 hover:text-white active:bg-primary active:bg-opacity-90 active:text-white rounded-xl;
+  }
+
+  .input {
+    @apply sm:flex-1 max-sm:w-full text-base leading-normal text-slate-gray pl-5 max-sm:p-5 outline-none sm:border-none border max-sm:border-slate-gray max-sm:rounded-full;
+  }
+}
+
+@layer utilities {
+  .padding {
+    @apply sm:px-16 px-8 sm:py-24 py-12;
+  }
+
+  .padding-x {
+    @apply sm:px-16 px-8;
+  }
+
+  .padding-y {
+    @apply sm:py-24 py-12;
+  }
+
+  .padding-l {
+    @apply sm:pl-16 pl-8;
+  }
+
+  .padding-r {
+    @apply sm:pr-16 pr-8;
+  }
+
+  .padding-t {
+    @apply sm:pt-24 pt-12;
+  }
+
+  .padding-b {
+    @apply sm:pb-24 pb-12;
+  }
+
+  .info-text {
+    @apply font-montserrat text-slate-gray text-lg leading-7;
+  }
+}
