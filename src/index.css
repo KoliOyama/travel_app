@@ -13,7 +13,7 @@
 }
 
 body {
-  @apply font-poppins text-neutral-900;
+  @apply font-poppins text-text-primary text-base;
 }
 
 @layer base {
@@ -41,9 +41,10 @@ body {
   .max-container {
     max-width: 1440px;
     margin: 0 auto;
+    padding-inline: 1.25rem;
   }
 
-  .sidebar {
+  /* .sidebar {
     @apply flex flex-col p-3 md:max-w-60 bg-neutral-1 border border-stroke-gray text-neutral-900 z-10 h-full;
   }
 
@@ -87,5 +88,5 @@ body {
 
   .info-text {
     @apply font-montserrat text-slate-gray text-lg leading-7;
-  }
+  } */
 }
