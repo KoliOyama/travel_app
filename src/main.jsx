@@ -6,7 +6,7 @@ import App from './App.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-  <Router basename="/travel_app">
+  <Router>
     <App />
   </Router>
   </StrictMode>,
