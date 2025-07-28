@@ -3,7 +3,8 @@ import { Link, NavLink } from "react-router-dom";
 import goPaddiLogo from "../../assets/logo.png";
 import SearchField from "../../components/SearchField";
 import { navLinks1, navLinks2 } from "../../lib/constants/Navigation";
-import caretDown from "../../assets/icons/CaretDown.svg"
+import caretDown from "../../assets/icons/CaretDown.svg";
+import Button from "../../components/Button";
 
 const Header = () => {
   return (
@@ -39,6 +40,9 @@ const Header = () => {
 
           {/* --------------------------------- */}
           <ul className="flex items-center text-sm gap-5">
+            <li>
+              <Button label="Subscribe" variant="primary" size="md" />
+            </li>
             <li className="flex items-center gap-5">
               {navLinks2.map((link) => (
                 <NavLink className="flex flex-col items-center justify-center gap-1">
@@ -60,7 +64,7 @@ const Header = () => {
                   className="w-full h-full object-cover"
                 />
               </div>
-                <img src={caretDown} alt="caret down" />
+              <img src={caretDown} alt="caret down" />
             </li>
           </ul>
         </nav>
